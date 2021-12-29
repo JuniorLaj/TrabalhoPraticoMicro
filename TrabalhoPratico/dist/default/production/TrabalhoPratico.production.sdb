@@ -1,0 +1,305 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 0 ]
+"10 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"6 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"4 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\func.c
+[v _exibirMensagemInicial exibirMensagemInicial `(v  1 e 1 0 ]
+"12
+[v _exibirMensagemDigitarId exibirMensagemDigitarId `(v  1 e 1 0 ]
+"21
+[v _exibirMensagemDigitarPin exibirMensagemDigitarPin `(v  1 e 1 0 ]
+"28
+[v _exibirMensagemAcessoPermitido exibirMensagemAcessoPermitido `(v  1 e 1 0 ]
+"35
+[v _exibirMensagemAcessoNegado exibirMensagemAcessoNegado `(v  1 e 1 0 ]
+"42
+[v _Questao1 Questao1 `(v  1 e 1 0 ]
+"48
+[v _Questao2 Questao2 `(v  1 e 1 0 ]
+"24 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\lcd.c
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+"38
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+"49
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+"60
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"79
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+"29 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\main.c
+[v _main main `(v  1 e 1 0 ]
+"26 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\teclado.c
+[v _tc_tecla tc_tecla `(uc  1 e 1 0 ]
+[s S190 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+"99 D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h
+[s S198 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[s S202 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S206 . 1 `S190 1 . 1 0 `S198 1 . 1 0 `S202 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES206  1 e 1 @3 ]
+"166
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S227 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"333
+[s S236 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S241 . 1 `S227 1 . 1 0 `S236 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES241  1 e 1 @11 ]
+"767
+[v _CMCON CMCON `VEuc  1 e 1 @31 ]
+"907
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"969
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S58 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 OSCF 1 0 :1:3 
+]
+"1107
+[s S63 . 1 `uc 1 nBO 1 0 :1:0 
+]
+[s S65 . 1 `uc 1 nBOD 1 0 :1:0 
+]
+[u S67 . 1 `S58 1 . 1 0 `S63 1 . 1 0 `S65 1 . 1 0 ]
+[v _PCONbits PCONbits `VES67  1 e 1 @142 ]
+"1208
+[v _EEDATA EEDATA `VEuc  1 e 1 @154 ]
+"1215
+[v _EEADR EEADR `VEuc  1 e 1 @155 ]
+"1222
+[v _EECON1 EECON1 `VEuc  1 e 1 @156 ]
+[s S174 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+]
+"1235
+[u S179 . 1 `S174 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES179  1 e 1 @156 ]
+"1260
+[v _EECON2 EECON2 `VEuc  1 e 1 @157 ]
+"1458
+[v _RA0 RA0 `VEb  1 e 0 @40 ]
+"1491
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"1494
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"1497
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"1500
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"1503
+[v _RB7 RB7 `VEb  1 e 0 @55 ]
+"24 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\teclado.c
+[v _linha linha `DC[4]uc  1 e 4 0 ]
+"29 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"112
+[v main@k k `uc  1 a 1 26 ]
+"99
+[v main@aux aux `uc  1 a 1 27 ]
+"109
+[v main@j_150 j `uc  1 a 1 21 ]
+"108
+[v main@i_149 i `uc  1 a 1 18 ]
+"60
+[v main@j j `uc  1 a 1 20 ]
+"35
+[v main@simbolosPin simbolosPin `[7]uc  1 a 7 9 ]
+"33
+[v main@simbolosId simbolosId `[7]uc  1 a 7 2 ]
+"31
+[v main@tecla tecla `uc  1 a 1 25 ]
+"32
+[v main@infoDigitada infoDigitada `uc  1 a 1 24 ]
+"34
+[v main@countSimbolosId countSimbolosId `uc  1 a 1 23 ]
+"30
+[v main@modoOperacao modoOperacao `uc  1 a 1 22 ]
+"58
+[v main@i i `uc  1 a 1 19 ]
+"36
+[v main@countSimbolosPin countSimbolosPin `uc  1 a 1 17 ]
+"55
+[v main@countRecordedAccesses countRecordedAccesses `uc  1 a 1 16 ]
+"152
+} 0
+"26 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\teclado.c
+[v _tc_tecla tc_tecla `(uc  1 e 1 0 ]
+{
+"27
+[v tc_tecla@to to `ui  1 a 2 8 ]
+"28
+[v tc_tecla@i i `uc  1 a 1 12 ]
+"29
+[v tc_tecla@ret ret `uc  1 a 1 11 ]
+"30
+[v tc_tecla@tmp tmp `uc  1 a 1 10 ]
+"26
+[v tc_tecla@timeout timeout `ui  1 p 2 4 ]
+"87
+} 0
+"4 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"60 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"77
+} 0
+"21 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\func.c
+[v _exibirMensagemDigitarPin exibirMensagemDigitarPin `(v  1 e 1 0 ]
+{
+"26
+} 0
+"28
+[v _exibirMensagemAcessoPermitido exibirMensagemAcessoPermitido `(v  1 e 1 0 ]
+{
+"33
+} 0
+"35
+[v _exibirMensagemAcessoNegado exibirMensagemAcessoNegado `(v  1 e 1 0 ]
+{
+"40
+} 0
+"6 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@value value `uc  1 p 1 0 ]
+[v eeprom_write@addr addr `uc  1 a 1 2 ]
+"9
+} 0
+"6 D:\program files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+"9
+[v eeprom_read@addr addr `uc  1 a 1 1 ]
+"19
+} 0
+"48 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\func.c
+[v _Questao2 Questao2 `(v  1 e 1 0 ]
+{
+[v Questao2@tecla tecla `uc  1 a 1 wreg ]
+[v Questao2@tecla tecla `uc  1 a 1 wreg ]
+[v Questao2@modoOperacao modoOperacao `*.4uc  1 p 1 9 ]
+[v Questao2@infoDigitada infoDigitada `*.4uc  1 p 1 10 ]
+[v Questao2@tecla tecla `uc  1 a 1 12 ]
+"55
+} 0
+"12
+[v _exibirMensagemDigitarId exibirMensagemDigitarId `(v  1 e 1 0 ]
+{
+"19
+} 0
+"42
+[v _Questao1 Questao1 `(v  1 e 1 0 ]
+{
+[v Questao1@tecla tecla `uc  1 a 1 wreg ]
+[v Questao1@tecla tecla `uc  1 a 1 wreg ]
+[v Questao1@modoOperacao modoOperacao `uc  1 p 1 9 ]
+[v Questao1@tecla tecla `uc  1 a 1 10 ]
+"46
+} 0
+"4
+[v _exibirMensagemInicial exibirMensagemInicial `(v  1 e 1 0 ]
+{
+"10
+} 0
+"79 G:\Meu Drive\UFOP\Microprocessadores e Microcontroladores\Trabalho Prático\TrabalhoPratico\lcd.c
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+{
+[v lcd_str@str str `*.24DCuc  1 a 1 wreg ]
+"81
+[v lcd_str@i i `uc  1 a 1 7 ]
+"79
+[v lcd_str@str str `*.24DCuc  1 a 1 wreg ]
+"81
+[v lcd_str@str str `*.24DCuc  1 a 1 8 ]
+"88
+} 0
+"49
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+{
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+"51
+[v lcd_dat@val val `uc  1 a 1 5 ]
+"58
+} 0
+"38
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+{
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+"40
+[v lcd_cmd@val val `uc  1 a 1 5 ]
+"47
+} 0
+"24
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+{
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+"26
+[v lcd_wr@i i `uc  1 a 1 2 ]
+"24
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+"28
+[v lcd_wr@val val `uc  1 a 1 1 ]
+"36
+} 0

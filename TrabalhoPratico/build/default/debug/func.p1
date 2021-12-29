@@ -1,0 +1,172 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"36 ./lcd.h
+[; ;./lcd.h: 36: void lcd_cmd(unsigned char val);
+[v _lcd_cmd `(v ~T0 @X0 0 ef1`uc ]
+"38
+[; ;./lcd.h: 38: void lcd_str(const char* str);
+[v _lcd_str `(v ~T0 @X0 0 ef1`*Cuc ]
+"4 func.c
+[; ;func.c: 4: void exibirMensagemInicial(void) {
+[v _exibirMensagemInicial `(v ~T0 @X0 1 ef ]
+{
+[e :U _exibirMensagemInicial ]
+[f ]
+"5
+[; ;func.c: 5:     lcd_cmd(0x80);
+[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
+"8
+[; ;func.c: 8:     lcd_str("Pressione * para entrar ou # para Configurar");
+[e ( _lcd_str (1 :s 1C ]
+"10
+[; ;func.c: 10: }
+[e :UE 1 ]
+}
+"12
+[; ;func.c: 12: void exibirMensagemDigitarId(void){
+[v _exibirMensagemDigitarId `(v ~T0 @X0 1 ef ]
+{
+[e :U _exibirMensagemDigitarId ]
+[f ]
+"13
+[; ;func.c: 13:     lcd_cmd(0x01);
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+"14
+[; ;func.c: 14:     lcd_cmd(0x80);
+[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
+"15
+[; ;func.c: 15:     lcd_cmd(0x01);
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+"17
+[; ;func.c: 17:     lcd_str("Digite o ID e aperte *");
+[e ( _lcd_str (1 :s 2C ]
+"19
+[; ;func.c: 19: }
+[e :UE 2 ]
+}
+"21
+[; ;func.c: 21: void exibirMensagemDigitarPin(void){
+[v _exibirMensagemDigitarPin `(v ~T0 @X0 1 ef ]
+{
+[e :U _exibirMensagemDigitarPin ]
+[f ]
+"22
+[; ;func.c: 22:     lcd_cmd(0x01);
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+"23
+[; ;func.c: 23:     lcd_cmd(0x80);
+[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
+"24
+[; ;func.c: 24:     lcd_str("Digite o PIN e aperte *");
+[e ( _lcd_str (1 :s 3C ]
+"25
+[; ;func.c: 25:     lcd_cmd(0xC0);
+[e ( _lcd_cmd (1 -> -> 192 `i `uc ]
+"26
+[; ;func.c: 26: }
+[e :UE 3 ]
+}
+"28
+[; ;func.c: 28: void exibirMensagemAcessoPermitido(void) {
+[v _exibirMensagemAcessoPermitido `(v ~T0 @X0 1 ef ]
+{
+[e :U _exibirMensagemAcessoPermitido ]
+[f ]
+"29
+[; ;func.c: 29:     lcd_cmd(0x01);
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+"30
+[; ;func.c: 30:     lcd_cmd(0x80);
+[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
+"31
+[; ;func.c: 31:     lcd_cmd(0x01);
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+"32
+[; ;func.c: 32:     lcd_str("Acesso permitido!");
+[e ( _lcd_str (1 :s 4C ]
+"33
+[; ;func.c: 33: }
+[e :UE 4 ]
+}
+"35
+[; ;func.c: 35: void exibirMensagemAcessoNegado(void) {
+[v _exibirMensagemAcessoNegado `(v ~T0 @X0 1 ef ]
+{
+[e :U _exibirMensagemAcessoNegado ]
+[f ]
+"36
+[; ;func.c: 36:     lcd_cmd(0x01);
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+"37
+[; ;func.c: 37:     lcd_cmd(0x80);
+[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
+"38
+[; ;func.c: 38:     lcd_cmd(0x01);
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+"39
+[; ;func.c: 39:     lcd_str("Acesso Negado!");
+[e ( _lcd_str (1 :s 5C ]
+"40
+[; ;func.c: 40: }
+[e :UE 5 ]
+}
+"42
+[; ;func.c: 42: void Questao1(unsigned char tecla, unsigned char modoOperacao) {
+[v _Questao1 `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _Questao1 ]
+[v _tecla `uc ~T0 @X0 1 r1 ]
+[v _modoOperacao `uc ~T0 @X0 1 r2 ]
+[f ]
+"43
+[; ;func.c: 43:     if(tecla != 10 && modoOperacao == 0) {
+[e $ ! && != -> _tecla `i -> 10 `i == -> _modoOperacao `i -> 0 `i 7  ]
+{
+"44
+[; ;func.c: 44:         exibirMensagemInicial();
+[e ( _exibirMensagemInicial ..  ]
+"45
+[; ;func.c: 45:     }
+}
+[e :U 7 ]
+"46
+[; ;func.c: 46: }
+[e :UE 6 ]
+}
+"48
+[; ;func.c: 48: void Questao2(unsigned char tecla, unsigned char* modoOperacao, unsigned char* infoDigitada){
+[v _Questao2 `(v ~T0 @X0 1 ef3`uc`*uc`*uc ]
+{
+[e :U _Questao2 ]
+[v _tecla `uc ~T0 @X0 1 r1 ]
+[v _modoOperacao `*uc ~T0 @X0 1 r2 ]
+[v _infoDigitada `*uc ~T0 @X0 1 r3 ]
+[f ]
+"49
+[; ;func.c: 49:     if (tecla == 42 && *modoOperacao != 2) {
+[e $ ! && == -> _tecla `i -> 42 `i != -> *U _modoOperacao `i -> 2 `i 9  ]
+{
+"50
+[; ;func.c: 50:         *modoOperacao = 2;
+[e = *U _modoOperacao -> -> 2 `i `uc ]
+"51
+[; ;func.c: 51:         *infoDigitada = 1;
+[e = *U _infoDigitada -> -> 1 `i `uc ]
+"52
+[; ;func.c: 52:         exibirMensagemDigitarId();
+[e ( _exibirMensagemDigitarId ..  ]
+"53
+[; ;func.c: 53:         lcd_cmd(0xC0);
+[e ( _lcd_cmd (1 -> -> 192 `i `uc ]
+"54
+[; ;func.c: 54:     }
+}
+[e :U 9 ]
+"55
+[; ;func.c: 55: }
+[e :UE 8 ]
+}
+[a 1C 80 114 101 115 115 105 111 110 101 32 42 32 112 97 114 97 32 101 110 116 114 97 114 32 111 117 32 35 32 112 97 114 97 32 67 111 110 102 105 103 117 114 97 114 0 ]
+[a 3C 68 105 103 105 116 101 32 111 32 80 73 78 32 101 32 97 112 101 114 116 101 32 42 0 ]
+[a 2C 68 105 103 105 116 101 32 111 32 73 68 32 101 32 97 112 101 114 116 101 32 42 0 ]
+[a 4C 65 99 101 115 115 111 32 112 101 114 109 105 116 105 100 111 33 0 ]
+[a 5C 65 99 101 115 115 111 32 78 101 103 97 100 111 33 0 ]
