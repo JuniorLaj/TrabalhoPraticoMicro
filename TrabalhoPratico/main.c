@@ -27,7 +27,7 @@
 
 
 void main(void) {
-    unsigned char modoOperacao = 0; // 0 -> sem operação 1 -> Login 2 -> Cadastro
+    unsigned char modoOperacao = 0; // 0 -> sem operaï¿½ï¿½o 1 -> Login 2 -> Cadastro
     unsigned char tecla;
     unsigned char infoDigitada = 0; // 0 -> login 1 -> senha
     unsigned char simbolosId[COUNT_MAX_ID];
@@ -45,16 +45,11 @@ void main(void) {
     PORTB = 0x00;
 
     lcd_init();
-    lcd_cmd(L_CLR);
-    lcd_cmd(L_L2);
-    lcd_cmd(L_CLR);
-    lcd_cmd(L_L1);
-
     
-    // LINHA 0 DA EEPROM utilizada para cabeçalho
+    // LINHA 0 DA EEPROM utilizada para cabeï¿½alho
     unsigned char countRecordedAccesses = eeprom_read(0);
     
-    // LIMPANDO TODAS AS POSIÇÕES NÃO UTILIZADS DA EEPROM PARA GARANTIR CONTEÚDO
+    // LIMPANDO TODAS AS POSIï¿½ï¿½ES Nï¿½O UTILIZADS DA EEPROM PARA GARANTIR CONTEï¿½DO
     unsigned char i;
     for(i=countRecordedAccesses; i<0xFF; i++){
         unsigned char j;
@@ -63,17 +58,16 @@ void main(void) {
         }
     }
     /* TO DO:
-        LOGIN (José)
-           * Testar implementação feita para Q4
-           * Timer 0 após exibição da mensagem de sucesso/falha no login
-           * Implementar conclusão após terminar o LOGIN (setar bits, etc..)
-           * Implementar Exibição dos textos em loop
+        LOGIN (Josï¿½)
+           * Testar implementaï¿½ï¿½o feita para Q4
+           * Timer 0 apï¿½s exibiï¿½ï¿½o da mensagem de sucesso/falha no login
+           * Implementar conclusï¿½o apï¿½s terminar o LOGIN (setar bits, etc..)
+           * Implementar Exibiï¿½ï¿½o dos textos grandes em loop
         CADASTRO (Renan)
            * Implementar entrada dos dados
-           * Incrementar contador de linha utilizada da memória (countRecordedAccesses) e gravar na EEPROM o novo valor
+           * Incrementar contador de linha utilizada da memï¿½ria (countRecordedAccesses) e gravar na EEPROM o novo valor
            * Setar bit de contagem de tempo (initTimerDisplayMessageQ3) 
-           * Implementar conclusão após terminar o CADASTRO (setar bits, etc..)
-
+           * Implementar conclusï¿½o apï¿½s terminar o CADASTRO (setar bits, etc..)
         EXTRAS 
            * Implementar WATCHDOG 
            * Implementar modo Sleep (?)
@@ -87,16 +81,16 @@ void main(void) {
         Questao2(tecla, &modoOperacao, &infoDigitada);
         
         //Q3
-        //alternar digitação de ID para PIN e Verificar cadastro na EEPROM
+        //alternar digitaï¿½ï¿½o de ID para PIN e Verificar cadastro na EEPROM
         if(tecla == 35 && modoOperacao == 2) {
-        //Alternar digitação de ID para PIN
+        //Alternar digitaï¿½ï¿½o de ID para PIN
             if(infoDigitada == 1){
                 lcd_cmd(L_L2);
                 lcd_cmd(L_CLR);
                 infoDigitada = 2;
                 exibirMensagemDigitarPin();
             } else if(infoDigitada == 2){
-                // Setando ox00 no restante dos vetores de simbolos para garntir conteúdo
+                // Setando ox00 no restante dos vetores de simbolos para garntir conteï¿½do
                 unsigned char aux = 0;
                 for(aux=countSimbolosId; aux<COUNT_MAX_ID; aux++){
                     simbolosId[aux] = 0x00;
@@ -106,7 +100,7 @@ void main(void) {
                 }
                 
                 // Q4 - Iniciando login
-                unsigned char i = 0; // bit de detecção de acesso correto
+                unsigned char i = 0; // bit de detecï¿½ï¿½o de acesso correto
                 unsigned char j; // contador de linha da EEPROM 
                 for(j=1; j<=countRecordedAccesses; j++){
                     i = 0; 

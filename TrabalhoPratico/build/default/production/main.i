@@ -1009,18 +1009,153 @@ extern __bank0 __bit __timeout;
 # 22 "main.c" 2
 
 
+# 1 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 1 3
+# 13 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef signed char int8_t;
+
+
+
+
+
+
+typedef signed int int16_t;
+
+
+
+
+
+
+
+typedef __int24 int24_t;
+
+
+
+
+
+
+
+typedef signed long int int32_t;
+# 52 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef unsigned char uint8_t;
+
+
+
+
+
+typedef unsigned int uint16_t;
+
+
+
+
+
+
+typedef __uint24 uint24_t;
+
+
+
+
+
+
+typedef unsigned long int uint32_t;
+# 88 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef signed char int_least8_t;
+
+
+
+
+
+
+
+typedef signed int int_least16_t;
+# 109 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef __int24 int_least24_t;
+# 118 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef signed long int int_least32_t;
+# 136 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef unsigned char uint_least8_t;
+
+
+
+
+
+
+typedef unsigned int uint_least16_t;
+# 154 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef __uint24 uint_least24_t;
+
+
+
+
+
+
+
+typedef unsigned long int uint_least32_t;
+# 181 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef signed char int_fast8_t;
+
+
+
+
+
+
+typedef signed int int_fast16_t;
+# 200 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef __int24 int_fast24_t;
+
+
+
+
+
+
+
+typedef signed long int int_fast32_t;
+# 224 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef unsigned char uint_fast8_t;
+
+
+
+
+
+typedef unsigned int uint_fast16_t;
+# 240 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef __uint24 uint_fast24_t;
+
+
+
+
+
+
+typedef unsigned long int uint_fast32_t;
+# 268 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef int32_t intmax_t;
+# 282 "D:\\program files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
+typedef uint32_t uintmax_t;
+
+
+
+
+
+
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+# 24 "main.c" 2
+
 # 1 "./lcd.h" 1
 # 35 "./lcd.h"
 void lcd_init(void);
 void lcd_cmd(unsigned char val);
 void lcd_dat(unsigned char val);
 void lcd_str(const char* str);
-# 24 "main.c" 2
+# 25 "main.c" 2
 
 # 1 "./teclado.h" 1
 # 29 "./teclado.h"
 unsigned char tc_tecla(unsigned int timeout);
-# 25 "main.c" 2
+# 26 "main.c" 2
 
 # 1 "./func.h" 1
 
@@ -1037,9 +1172,25 @@ void exibirMensagemAcessoPermitido(void);
 void exibirMensagemAcessoNegado(void);
 void Questao1(unsigned char tecla, unsigned char modoOperacao);
 void Questao2(unsigned char tecla, unsigned char* modoOperacao, unsigned char* infoDigitada);
-# 26 "main.c" 2
+# 27 "main.c" 2
 
 
+uint8_t Eeprom_read(uint8_t addr){
+       EEADR = addr;
+       EECON1bits.RD = 1;
+       while(EECON1bits.RD);
+       return EEDATA;
+}
+
+void Eeprom_write(uint8_t addr, uint8_t data){
+    PORTBbits.RB3 = 1;
+    EEADR = addr;
+    EEDATA = data;
+    EECON1bits.WREN = 1;
+    INTCONbits.GIE = 0;
+    EECON1bits.WREN = 0;
+    INTCONbits.GIE = 1;
+}
 
 void main(void) {
     unsigned char modoOperacao = 0;
@@ -1060,11 +1211,6 @@ void main(void) {
     PORTB = 0x00;
 
     lcd_init();
-    lcd_cmd(0x01);
-    lcd_cmd(0xC0);
-    lcd_cmd(0x01);
-    lcd_cmd(0x80);
-
 
 
     unsigned char countRecordedAccesses = eeprom_read(0);
@@ -1077,76 +1223,17 @@ void main(void) {
             eeprom_write(i*16 + j,0x00);
         }
     }
-# 81 "main.c"
+# 93 "main.c"
     while (1) {
         tecla = tc_tecla(5000);
-
-        Questao1(tecla, modoOperacao);
-
-        Questao2(tecla, &modoOperacao, &infoDigitada);
-
-
-
-        if(tecla == 35 && modoOperacao == 2) {
-
-            if(infoDigitada == 1){
-                lcd_cmd(0xC0);
-                lcd_cmd(0x01);
-                infoDigitada = 2;
-                exibirMensagemDigitarPin();
-            } else if(infoDigitada == 2){
-
-                unsigned char aux = 0;
-                for(aux=countSimbolosId; aux<7; aux++){
-                    simbolosId[aux] = 0x00;
-                }
-                for(aux=countSimbolosId; aux<7; aux++){
-                    simbolosPin[aux] = 0x00;
-                }
-
-
-                unsigned char i = 0;
-                unsigned char j;
-                for(j=1; j<=countRecordedAccesses; j++){
-                    i = 0;
-                    unsigned char k = 0;
-                    for(k=0; k<8; k++) {
-                        if(eeprom_read(j*16 + k) != simbolosId[k] ||
-                                eeprom_read(8 + (j*16 + k)) != simbolosPin[k]) {
-                            i = 1;
-                            break;
-                        }
-                    }
-                    if(!i){
-
-                        exibirMensagemAcessoPermitido();
-                    }
-                }
-                if(i) {
-
-                    exibirMensagemAcessoNegado();
-                }
-                initTimerDisplayMessageQ3 = 1;
-            }
+        if(tecla == 42) {
+            eeprom_write(0x00, 0x05);
+            lcd_dat(0x2A);
         }
-
-
-        if (tecla >=0 && tecla <=9) {
-
-            if(infoDigitada == 1){
-                if(countSimbolosId != 7) {
-                    simbolosId[countSimbolosId] = tecla;
-                    lcd_dat(0x2A);
-                    countSimbolosId++;
-                }
-
-            } else if (infoDigitada == 2){
-                if(countSimbolosPin != 7) {
-                    simbolosPin[countSimbolosPin] = tecla;
-                    lcd_dat(0x2A);
-                    countSimbolosPin++;
-                }
-            }
+        unsigned char aux = eeprom_read(0x00);
+        if(aux == 0x05){
+            exibirMensagemAcessoNegado();
         }
+# 171 "main.c"
     }
 }

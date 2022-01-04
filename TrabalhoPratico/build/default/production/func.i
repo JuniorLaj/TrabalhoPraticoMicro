@@ -46,14 +46,14 @@ void exibirMensagemDigitarId(void){
     lcd_cmd(0x80);
     lcd_cmd(0x01);
 
-    lcd_str("Digite o ID e aperte *");
+    lcd_str("Digite o ID e aperte #");
 
 }
 
 void exibirMensagemDigitarPin(void){
     lcd_cmd(0x01);
     lcd_cmd(0x80);
-    lcd_str("Digite o PIN e aperte *");
+    lcd_str("Digite o PIN e aperte #");
     lcd_cmd(0xC0);
 }
 

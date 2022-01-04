@@ -1,6 +1,49 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"1215 D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 1215: extern volatile unsigned char EEADR __attribute__((address(0x09B)));
+[v _EEADR `Vuc ~T0 @X0 0 e@155 ]
+"1228
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 1228:     struct {
+[s S47 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S47 . RD WR WREN WRERR ]
+"1227
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 1227: typedef union {
+[u S46 `S47 1 ]
+[n S46 . . ]
+"1235
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 1235: extern volatile EECON1bits_t EECON1bits __attribute__((address(0x09C)));
+[v _EECON1bits `VS46 ~T0 @X0 0 e@156 ]
+"1208
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 1208: extern volatile unsigned char EEDATA __attribute__((address(0x09A)));
+[v _EEDATA `Vuc ~T0 @X0 0 e@154 ]
+"234
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 234:     struct {
+[s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S8 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"233
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 233: typedef union {
+[u S7 `S8 1 ]
+[n S7 . . ]
+"245
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 245: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
+[v _PORTBbits `VS7 ~T0 @X0 0 e@6 ]
+"316
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 316:     struct {
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RBIF INTF T0IF RBIE INTE T0IE PEIE GIE ]
+"326
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 326:     struct {
+[s S13 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S13 . . TMR0IF . TMR0IE ]
+"315
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 315: typedef union {
+[u S11 `S12 1 `S13 1 ]
+[n S11 . . . ]
+"333
+[; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 333: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS11 ~T0 @X0 0 e@11 ]
 [p mainexit ]
-"1094 D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h
+"1094
 [; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 1094:     struct {
 [s S41 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S41 . nBOR nPOR . OSCF ]
@@ -37,9 +80,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35 ./lcd.h
 [; ;./lcd.h: 35: void lcd_init(void);
 [v _lcd_init `(v ~T0 @X0 0 ef ]
-"36
-[; ;./lcd.h: 36: void lcd_cmd(unsigned char val);
-[v _lcd_cmd `(v ~T0 @X0 0 ef1`uc ]
 "115 D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\eeprom_routines.h
 [; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\eeprom_routines.h: 115: extern unsigned char eeprom_read(unsigned char addr);
 [v _eeprom_read `(uc ~T0 @X0 0 ef1`uc ]
@@ -49,24 +89,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29 ./teclado.h
 [; ;./teclado.h: 29: unsigned char tc_tecla(unsigned int timeout);
 [v _tc_tecla `(uc ~T0 @X0 0 ef1`ui ]
-"13 ./func.h
-[; ;./func.h: 13: void Questao1(unsigned char tecla, unsigned char modoOperacao);
-[v _Questao1 `(v ~T0 @X0 0 ef2`uc`uc ]
-"14
-[; ;./func.h: 14: void Questao2(unsigned char tecla, unsigned char* modoOperacao, unsigned char* infoDigitada);
-[v _Questao2 `(v ~T0 @X0 0 ef3`uc`*uc`*uc ]
-"10
-[; ;./func.h: 10: void exibirMensagemDigitarPin(void);
-[v _exibirMensagemDigitarPin `(v ~T0 @X0 0 ef ]
-"11
-[; ;./func.h: 11: void exibirMensagemAcessoPermitido(void);
-[v _exibirMensagemAcessoPermitido `(v ~T0 @X0 0 ef ]
-"12
-[; ;./func.h: 12: void exibirMensagemAcessoNegado(void);
-[v _exibirMensagemAcessoNegado `(v ~T0 @X0 0 ef ]
 "37 ./lcd.h
 [; ;./lcd.h: 37: void lcd_dat(unsigned char val);
 [v _lcd_dat `(v ~T0 @X0 0 ef1`uc ]
+"12 ./func.h
+[; ;./func.h: 12: void exibirMensagemAcessoNegado(void);
+[v _exibirMensagemAcessoNegado `(v ~T0 @X0 0 ef ]
 "10 main.c
 [p x FOSC  =  INTOSCIO   ]
 "11
@@ -194,357 +222,210 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1269
 [; ;D:/program files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f628a.h: 1269: __asm("VRCON equ 09Fh");
 [; <" VRCON equ 09Fh ;# ">
-[v $root$_main `(v ~T0 @X0 0 e ]
 "29 main.c
-[; ;main.c: 29: void main(void) {
+[; ;main.c: 29: uint8_t Eeprom_read(uint8_t addr){
+[v _Eeprom_read `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _Eeprom_read ]
+[v _addr `uc ~T0 @X0 1 r1 ]
+[f ]
+"30
+[; ;main.c: 30:        EEADR = addr;
+[e = _EEADR _addr ]
+"31
+[; ;main.c: 31:        EECON1bits.RD = 1;
+[e = . . _EECON1bits 0 0 -> -> 1 `i `uc ]
+"32
+[; ;main.c: 32:        while(EECON1bits.RD);
+[e $U 52  ]
+[e :U 53 ]
+[e :U 52 ]
+[e $ != -> . . _EECON1bits 0 0 `i -> 0 `i 53  ]
+[e :U 54 ]
+"33
+[; ;main.c: 33:        return EEDATA;
+[e ) _EEDATA ]
+[e $UE 51  ]
+"34
+[; ;main.c: 34: }
+[e :UE 51 ]
+}
+"36
+[; ;main.c: 36: void Eeprom_write(uint8_t addr, uint8_t data){
+[v _Eeprom_write `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _Eeprom_write ]
+[v _addr `uc ~T0 @X0 1 r1 ]
+[v _data `uc ~T0 @X0 1 r2 ]
+[f ]
+"37
+[; ;main.c: 37:     PORTBbits.RB3 = 1;
+[e = . . _PORTBbits 0 3 -> -> 1 `i `uc ]
+"38
+[; ;main.c: 38:     EEADR = addr;
+[e = _EEADR _addr ]
+"39
+[; ;main.c: 39:     EEDATA = data;
+[e = _EEDATA _data ]
+"40
+[; ;main.c: 40:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"41
+[; ;main.c: 41:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"42
+[; ;main.c: 42:     EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
+"43
+[; ;main.c: 43:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"44
+[; ;main.c: 44: }
+[e :UE 55 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"46
+[; ;main.c: 46: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"30
-[; ;main.c: 30:     unsigned char modoOperacao = 0;
+"47
+[; ;main.c: 47:     unsigned char modoOperacao = 0;
 [v _modoOperacao `uc ~T0 @X0 1 a ]
 [e = _modoOperacao -> -> 0 `i `uc ]
-"31
-[; ;main.c: 31:     unsigned char tecla;
+"48
+[; ;main.c: 48:     unsigned char tecla;
 [v _tecla `uc ~T0 @X0 1 a ]
-"32
-[; ;main.c: 32:     unsigned char infoDigitada = 0;
+"49
+[; ;main.c: 49:     unsigned char infoDigitada = 0;
 [v _infoDigitada `uc ~T0 @X0 1 a ]
 [e = _infoDigitada -> -> 0 `i `uc ]
-"33
-[; ;main.c: 33:     unsigned char simbolosId[7];
+"50
+[; ;main.c: 50:     unsigned char simbolosId[7];
 [v _simbolosId `uc ~T0 @X0 -> 7 `i a ]
-"34
-[; ;main.c: 34:     unsigned char countSimbolosId = 0;
+"51
+[; ;main.c: 51:     unsigned char countSimbolosId = 0;
 [v _countSimbolosId `uc ~T0 @X0 1 a ]
 [e = _countSimbolosId -> -> 0 `i `uc ]
-"35
-[; ;main.c: 35:     unsigned char simbolosPin[7];
+"52
+[; ;main.c: 52:     unsigned char simbolosPin[7];
 [v _simbolosPin `uc ~T0 @X0 -> 7 `i a ]
-"36
-[; ;main.c: 36:     unsigned char countSimbolosPin = 0;
+"53
+[; ;main.c: 53:     unsigned char countSimbolosPin = 0;
 [v _countSimbolosPin `uc ~T0 @X0 1 a ]
 [e = _countSimbolosPin -> -> 0 `i `uc ]
-"37
-[; ;main.c: 37:     unsigned char initTimerDisplayMessageQ3 = 0;
+"54
+[; ;main.c: 54:     unsigned char initTimerDisplayMessageQ3 = 0;
 [v _initTimerDisplayMessageQ3 `uc ~T0 @X0 1 a ]
 [e = _initTimerDisplayMessageQ3 -> -> 0 `i `uc ]
-"38
-[; ;main.c: 38:     PCONbits.OSCF = 1;
-[e = . . _PCONbits 0 3 -> -> 1 `i `uc ]
-"40
-[; ;main.c: 40:     CMCON = 0x07;
-[e = _CMCON -> -> 7 `i `uc ]
-"41
-[; ;main.c: 41:     TRISA = 0x30;
-[e = _TRISA -> -> 48 `i `uc ]
-"42
-[; ;main.c: 42:     TRISB = 0xE7;
-[e = _TRISB -> -> 231 `i `uc ]
-"44
-[; ;main.c: 44:     PORTA = 0xFE;
-[e = _PORTA -> -> 254 `i `uc ]
-"45
-[; ;main.c: 45:     PORTB = 0x00;
-[e = _PORTB -> -> 0 `i `uc ]
-"47
-[; ;main.c: 47:     lcd_init();
-[e ( _lcd_init ..  ]
-"48
-[; ;main.c: 48:     lcd_cmd(0x01);
-[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
-"49
-[; ;main.c: 49:     lcd_cmd(0xC0);
-[e ( _lcd_cmd (1 -> -> 192 `i `uc ]
-"50
-[; ;main.c: 50:     lcd_cmd(0x01);
-[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
-"51
-[; ;main.c: 51:     lcd_cmd(0x80);
-[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
 "55
-[; ;main.c: 55:     unsigned char countRecordedAccesses = eeprom_read(0);
+[; ;main.c: 55:     PCONbits.OSCF = 1;
+[e = . . _PCONbits 0 3 -> -> 1 `i `uc ]
+"57
+[; ;main.c: 57:     CMCON = 0x07;
+[e = _CMCON -> -> 7 `i `uc ]
+"58
+[; ;main.c: 58:     TRISA = 0x30;
+[e = _TRISA -> -> 48 `i `uc ]
+"59
+[; ;main.c: 59:     TRISB = 0xE7;
+[e = _TRISB -> -> 231 `i `uc ]
+"61
+[; ;main.c: 61:     PORTA = 0xFE;
+[e = _PORTA -> -> 254 `i `uc ]
+"62
+[; ;main.c: 62:     PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"64
+[; ;main.c: 64:     lcd_init();
+[e ( _lcd_init ..  ]
+"67
+[; ;main.c: 67:     unsigned char countRecordedAccesses = eeprom_read(0);
 [v _countRecordedAccesses `uc ~T0 @X0 1 a ]
 [e = _countRecordedAccesses ( _eeprom_read (1 -> -> 0 `i `uc ]
-"58
-[; ;main.c: 58:     unsigned char i;
+"70
+[; ;main.c: 70:     unsigned char i;
 [v _i `uc ~T0 @X0 1 a ]
-"59
-[; ;main.c: 59:     for(i=countRecordedAccesses; i<0xFF; i++){
+"71
+[; ;main.c: 71:     for(i=countRecordedAccesses; i<0xFF; i++){
 {
 [e = _i _countRecordedAccesses ]
-[e $ < -> _i `i -> 255 `i 52  ]
-[e $U 53  ]
-[e :U 52 ]
+[e $ < -> _i `i -> 255 `i 57  ]
+[e $U 58  ]
+[e :U 57 ]
 {
-"60
-[; ;main.c: 60:         unsigned char j;
+"72
+[; ;main.c: 72:         unsigned char j;
 [v _j `uc ~T0 @X0 1 a ]
-"61
-[; ;main.c: 61:         for(j=0; j<8; j++){
+"73
+[; ;main.c: 73:         for(j=0; j<8; j++){
 {
 [e = _j -> -> 0 `i `uc ]
-[e $ < -> _j `i -> 8 `i 55  ]
-[e $U 56  ]
-[e :U 55 ]
+[e $ < -> _j `i -> 8 `i 60  ]
+[e $U 61  ]
+[e :U 60 ]
 {
-"62
-[; ;main.c: 62:             eeprom_write(i*16 + j,0x00);
+"74
+[; ;main.c: 74:             eeprom_write(i*16 + j,0x00);
 [e ( _eeprom_write (2 , -> + * -> _i `i -> 16 `i -> _j `i `uc -> -> 0 `i `uc ]
-"63
-[; ;main.c: 63:         }
+"75
+[; ;main.c: 75:         }
 }
 [e ++ _j -> -> 1 `i `uc ]
-[e $ < -> _j `i -> 8 `i 55  ]
-[e :U 56 ]
+[e $ < -> _j `i -> 8 `i 60  ]
+[e :U 61 ]
 }
-"64
-[; ;main.c: 64:     }
+"76
+[; ;main.c: 76:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 255 `i 52  ]
-[e :U 53 ]
+[e $ < -> _i `i -> 255 `i 57  ]
+[e :U 58 ]
 }
-"81
-[; ;main.c: 81:     while (1) {
-[e :U 59 ]
-{
-"82
-[; ;main.c: 82:         tecla = tc_tecla(5000);
-[e = _tecla ( _tc_tecla (1 -> -> 5000 `i `ui ]
-"84
-[; ;main.c: 84:         Questao1(tecla, modoOperacao);
-[e ( _Questao1 (2 , _tecla _modoOperacao ]
-"86
-[; ;main.c: 86:         Questao2(tecla, &modoOperacao, &infoDigitada);
-[e ( _Questao2 (3 , , _tecla &U _modoOperacao &U _infoDigitada ]
-"90
-[; ;main.c: 90:         if(tecla == 35 && modoOperacao == 2) {
-[e $ ! && == -> _tecla `i -> 35 `i == -> _modoOperacao `i -> 2 `i 61  ]
-{
-"92
-[; ;main.c: 92:             if(infoDigitada == 1){
-[e $ ! == -> _infoDigitada `i -> 1 `i 62  ]
-{
 "93
-[; ;main.c: 93:                 lcd_cmd(0xC0);
-[e ( _lcd_cmd (1 -> -> 192 `i `uc ]
+[; ;main.c: 93:     while (1) {
+[e :U 64 ]
+{
 "94
-[; ;main.c: 94:                 lcd_cmd(0x01);
-[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+[; ;main.c: 94:         tecla = tc_tecla(5000);
+[e = _tecla ( _tc_tecla (1 -> -> 5000 `i `ui ]
 "95
-[; ;main.c: 95:                 infoDigitada = 2;
-[e = _infoDigitada -> -> 2 `i `uc ]
+[; ;main.c: 95:         if(tecla == 42) {
+[e $ ! == -> _tecla `i -> 42 `i 66  ]
+{
 "96
-[; ;main.c: 96:                 exibirMensagemDigitarPin();
-[e ( _exibirMensagemDigitarPin ..  ]
+[; ;main.c: 96:             eeprom_write(0x00, 0x05);
+[e ( _eeprom_write (2 , -> -> 0 `i `uc -> -> 5 `i `uc ]
 "97
-[; ;main.c: 97:             } else if(infoDigitada == 2){
+[; ;main.c: 97:             lcd_dat(0x2A);
+[e ( _lcd_dat (1 -> -> 42 `i `uc ]
+"98
+[; ;main.c: 98:         }
 }
-[e $U 63  ]
-[e :U 62 ]
-[e $ ! == -> _infoDigitada `i -> 2 `i 64  ]
-{
+[e :U 66 ]
 "99
-[; ;main.c: 99:                 unsigned char aux = 0;
+[; ;main.c: 99:         unsigned char aux = eeprom_read(0x00);
 [v _aux `uc ~T0 @X0 1 a ]
-[e = _aux -> -> 0 `i `uc ]
+[e = _aux ( _eeprom_read (1 -> -> 0 `i `uc ]
 "100
-[; ;main.c: 100:                 for(aux=countSimbolosId; aux<7; aux++){
-{
-[e = _aux _countSimbolosId ]
-[e $ < -> _aux `i -> 7 `i 65  ]
-[e $U 66  ]
-[e :U 65 ]
+[; ;main.c: 100:         if(aux == 0x05){
+[e $ ! == -> _aux `i -> 5 `i 67  ]
 {
 "101
-[; ;main.c: 101:                     simbolosId[aux] = 0x00;
-[e = *U + &U _simbolosId * -> _aux `ux -> -> # *U &U _simbolosId `ui `ux -> -> 0 `i `uc ]
-"102
-[; ;main.c: 102:                 }
-}
-[e ++ _aux -> -> 1 `i `uc ]
-[e $ < -> _aux `i -> 7 `i 65  ]
-[e :U 66 ]
-}
-"103
-[; ;main.c: 103:                 for(aux=countSimbolosId; aux<7; aux++){
-{
-[e = _aux _countSimbolosId ]
-[e $ < -> _aux `i -> 7 `i 68  ]
-[e $U 69  ]
-[e :U 68 ]
-{
-"104
-[; ;main.c: 104:                     simbolosPin[aux] = 0x00;
-[e = *U + &U _simbolosPin * -> _aux `ux -> -> # *U &U _simbolosPin `ui `ux -> -> 0 `i `uc ]
-"105
-[; ;main.c: 105:                 }
-}
-[e ++ _aux -> -> 1 `i `uc ]
-[e $ < -> _aux `i -> 7 `i 68  ]
-[e :U 69 ]
-}
-"108
-[; ;main.c: 108:                 unsigned char i = 0;
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-"109
-[; ;main.c: 109:                 unsigned char j;
-[v _j `uc ~T0 @X0 1 a ]
-"110
-[; ;main.c: 110:                 for(j=1; j<=countRecordedAccesses; j++){
-{
-[e = _j -> -> 1 `i `uc ]
-[e $U 74  ]
-[e :U 71 ]
-{
-"111
-[; ;main.c: 111:                     i = 0;
-[e = _i -> -> 0 `i `uc ]
-"112
-[; ;main.c: 112:                     unsigned char k = 0;
-[v _k `uc ~T0 @X0 1 a ]
-[e = _k -> -> 0 `i `uc ]
-"113
-[; ;main.c: 113:                     for(k=0; k<8; k++) {
-{
-[e = _k -> -> 0 `i `uc ]
-[e $ < -> _k `i -> 8 `i 75  ]
-[e $U 76  ]
-[e :U 75 ]
-{
-"114
-[; ;main.c: 114:                         if(eeprom_read(j*16 + k) != simbolosId[k] ||
-[e $ ! || != -> ( _eeprom_read (1 -> + * -> _j `i -> 16 `i -> _k `i `uc `i -> *U + &U _simbolosId * -> _k `ux -> -> # *U &U _simbolosId `ui `ux `i != -> ( _eeprom_read (1 -> + -> 8 `i + * -> _j `i -> 16 `i -> _k `i `uc `i -> *U + &U _simbolosPin * -> _k `ux -> -> # *U &U _simbolosPin `ui `ux `i 78  ]
-"115
-[; ;main.c: 115:                                 eeprom_read(8 + (j*16 + k)) != simbolosPin[k]) {
-{
-"116
-[; ;main.c: 116:                             i = 1;
-[e = _i -> -> 1 `i `uc ]
-"117
-[; ;main.c: 117:                             break;
-[e $U 76  ]
-"118
-[; ;main.c: 118:                         }
-}
-[e :U 78 ]
-"119
-[; ;main.c: 119:                     }
-}
-[e ++ _k -> -> 1 `i `uc ]
-[e $ < -> _k `i -> 8 `i 75  ]
-[e :U 76 ]
-}
-"120
-[; ;main.c: 120:                     if(!i){
-[e $ ! ! != -> _i `i -> 0 `i 79  ]
-{
-"122
-[; ;main.c: 122:                         exibirMensagemAcessoPermitido();
-[e ( _exibirMensagemAcessoPermitido ..  ]
-"123
-[; ;main.c: 123:                     }
-}
-[e :U 79 ]
-"124
-[; ;main.c: 124:                 }
-}
-[e ++ _j -> -> 1 `i `uc ]
-[e :U 74 ]
-[e $ <= -> _j `i -> _countRecordedAccesses `i 71  ]
-[e :U 72 ]
-}
-"125
-[; ;main.c: 125:                 if(i) {
-[e $ ! != -> _i `i -> 0 `i 80  ]
-{
-"127
-[; ;main.c: 127:                     exibirMensagemAcessoNegado();
+[; ;main.c: 101:             exibirMensagemAcessoNegado();
 [e ( _exibirMensagemAcessoNegado ..  ]
-"128
-[; ;main.c: 128:                 }
+"102
+[; ;main.c: 102:         }
 }
-[e :U 80 ]
-"129
-[; ;main.c: 129:                 initTimerDisplayMessageQ3 = 1;
-[e = _initTimerDisplayMessageQ3 -> -> 1 `i `uc ]
-"130
-[; ;main.c: 130:             }
+[e :U 67 ]
+"171
+[; ;main.c: 171:     }
 }
-[e :U 64 ]
 [e :U 63 ]
-"131
-[; ;main.c: 131:         }
-}
-[e :U 61 ]
-"134
-[; ;main.c: 134:         if (tecla >=0 && tecla <=9) {
-[e $ ! && >= -> _tecla `i -> 0 `i <= -> _tecla `i -> 9 `i 81  ]
-{
-"136
-[; ;main.c: 136:             if(infoDigitada == 1){
-[e $ ! == -> _infoDigitada `i -> 1 `i 82  ]
-{
-"137
-[; ;main.c: 137:                 if(countSimbolosId != 7) {
-[e $ ! != -> _countSimbolosId `i -> 7 `i 83  ]
-{
-"138
-[; ;main.c: 138:                     simbolosId[countSimbolosId] = tecla;
-[e = *U + &U _simbolosId * -> _countSimbolosId `ux -> -> # *U &U _simbolosId `ui `ux _tecla ]
-"139
-[; ;main.c: 139:                     lcd_dat(0x2A);
-[e ( _lcd_dat (1 -> -> 42 `i `uc ]
-"140
-[; ;main.c: 140:                     countSimbolosId++;
-[e ++ _countSimbolosId -> -> 1 `i `uc ]
-"141
-[; ;main.c: 141:                 }
-}
-[e :U 83 ]
-"143
-[; ;main.c: 143:             } else if (infoDigitada == 2){
-}
-[e $U 84  ]
-[e :U 82 ]
-[e $ ! == -> _infoDigitada `i -> 2 `i 85  ]
-{
-"144
-[; ;main.c: 144:                 if(countSimbolosPin != 7) {
-[e $ ! != -> _countSimbolosPin `i -> 7 `i 86  ]
-{
-"145
-[; ;main.c: 145:                     simbolosPin[countSimbolosPin] = tecla;
-[e = *U + &U _simbolosPin * -> _countSimbolosPin `ux -> -> # *U &U _simbolosPin `ui `ux _tecla ]
-"146
-[; ;main.c: 146:                     lcd_dat(0x2A);
-[e ( _lcd_dat (1 -> -> 42 `i `uc ]
-"147
-[; ;main.c: 147:                     countSimbolosPin++;
-[e ++ _countSimbolosPin -> -> 1 `i `uc ]
-"148
-[; ;main.c: 148:                 }
-}
-[e :U 86 ]
-"149
-[; ;main.c: 149:             }
-}
-[e :U 85 ]
-[e :U 84 ]
-"150
-[; ;main.c: 150:         }
-}
-[e :U 81 ]
-"151
-[; ;main.c: 151:     }
-}
-[e :U 58 ]
-[e $U 59  ]
-[e :U 60 ]
-"152
-[; ;main.c: 152: }
-[e :UE 51 ]
+[e $U 64  ]
+[e :U 65 ]
+"172
+[; ;main.c: 172: }
+[e :UE 56 ]
 }

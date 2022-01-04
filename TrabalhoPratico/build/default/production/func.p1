@@ -37,7 +37,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;func.c: 15:     lcd_cmd(0x01);
 [e ( _lcd_cmd (1 -> -> 1 `i `uc ]
 "17
-[; ;func.c: 17:     lcd_str("Digite o ID e aperte *");
+[; ;func.c: 17:     lcd_str("Digite o ID e aperte #");
 [e ( _lcd_str (1 :s 2C ]
 "19
 [; ;func.c: 19: }
@@ -56,7 +56,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;func.c: 23:     lcd_cmd(0x80);
 [e ( _lcd_cmd (1 -> -> 128 `i `uc ]
 "24
-[; ;func.c: 24:     lcd_str("Digite o PIN e aperte *");
+[; ;func.c: 24:     lcd_str("Digite o PIN e aperte #");
 [e ( _lcd_str (1 :s 3C ]
 "25
 [; ;func.c: 25:     lcd_cmd(0xC0);
@@ -166,7 +166,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 8 ]
 }
 [a 1C 80 114 101 115 115 105 111 110 101 32 42 32 112 97 114 97 32 101 110 116 114 97 114 32 111 117 32 35 32 112 97 114 97 32 67 111 110 102 105 103 117 114 97 114 0 ]
-[a 3C 68 105 103 105 116 101 32 111 32 80 73 78 32 101 32 97 112 101 114 116 101 32 42 0 ]
-[a 2C 68 105 103 105 116 101 32 111 32 73 68 32 101 32 97 112 101 114 116 101 32 42 0 ]
+[a 3C 68 105 103 105 116 101 32 111 32 80 73 78 32 101 32 97 112 101 114 116 101 32 35 0 ]
+[a 2C 68 105 103 105 116 101 32 111 32 73 68 32 101 32 97 112 101 114 116 101 32 35 0 ]
 [a 4C 65 99 101 115 115 111 32 112 101 114 109 105 116 105 100 111 33 0 ]
 [a 5C 65 99 101 115 115 111 32 78 101 103 97 100 111 33 0 ]
